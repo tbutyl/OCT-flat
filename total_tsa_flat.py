@@ -124,8 +124,8 @@ def fit_fix(stk):
     
     #Step 1 - Remove Wiggles
 
-    #wiggleless = dewiggle(stk)
-    wiggleless=stk #####
+    wiggleless = dewiggle(stk)
+    #wiggleless=stk #####
     #polyfit flatten
     # same idea as nfl segmentation but uses the first half of the volume in depth to detect
     # RPE/OS boundary, then flattens by placing into stack

@@ -201,7 +201,9 @@ def process(pth):
         
     reg_stk = flat.fit_fix(avg_stk)
     avg_pth = pth.parent / 'tsa_stack.tif'
+    unreg_pth = pth.parent / 'unreg_tsa_stack.tif'
     save(reg_stk, avg_pth)
+    save(avg_stk, unreg_pth)
     
         
 def main():
